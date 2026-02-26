@@ -5,7 +5,14 @@ import {defineConfig, loadEnv} from 'vite';
 
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
-  const base = env.GITHUB_PAGES === 'true' ? '/wild-frontier-bbq/' : '/';
+  const repo =
+    process.env.GITHUB_REPOSITORY?.split('/')[1] ?? env.VITE_GH_REPO ?? '';
+  const base =
+    env.GITHUB_PAGES === 'true'
+      ? `/${env.VITE_GH_REPO ?? 'wild-bbq'}/`
+      : repo
+        ? `/${repo}/`
+        : '/';
   return {
     base,
     plugins: [react(), tailwindcss()],
