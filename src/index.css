@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Alfa Slab One", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-charcoal: #121212;
+  --color-smoke: #2a2a2a;
+  --color-fire: #d32f2f;
+  --color-burnt: #bf360c;
+  --color-wood: #3e2723;
+}
+
+@layer base {
+  body {
+    @apply bg-charcoal text-white font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight uppercase;
+  }
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.bg-wood-texture {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/seed/wood/1920/1080');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-smoke-overlay {
+  background: linear-gradient(to bottom, transparent, rgba(18, 18, 18, 0.9));
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+}
+

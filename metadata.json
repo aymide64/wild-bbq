@@ -1,0 +1,5 @@
+{
+  "name": "Wild Frontier BBQ",
+  "description": "Authentic, slow-smoked barbecue in Oberlin, Kansas. Real smoke, real flavor, no shortcuts.",
+  "requestFramePermissions": ["geolocation"]
+}
