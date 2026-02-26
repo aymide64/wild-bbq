@@ -236,7 +236,7 @@ const Hero = () => {
           <span className="inline-block bg-fire/20 text-fire px-4 py-1 rounded-full text-xs font-bold uppercase tracking-[0.2em] mb-6 backdrop-blur-sm border border-fire/30">
             Oberlin's Finest Roadside BBQ
           </span>
-          <h1 className="text-4xl md:text-7xl lg:text-8xl mb-6 leading-[0.9] text-shadow-lg">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl mb-6 leading-[0.9] text-shadow-lg">
             Real Smoke.<br />
             <span className="text-fire">Real Flavor.</span><br />
             No Shortcuts.
